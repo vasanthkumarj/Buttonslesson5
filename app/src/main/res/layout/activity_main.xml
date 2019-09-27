@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/b1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/alarm"
+        />
+
+    <ImageButton
+        android:id="@+id/b2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/b1"
+        android:src="@android:drawable/ic_lock_idle_alarm" />
+
+    <Button
+        android:id="@+id/b3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/alarm"
+        android:layout_below="@+id/b2"
+        android:drawableLeft="@android:drawable/ic_lock_idle_alarm"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@android:color/holo_blue_light"
+        android:drawableLeft="@drawable/ic_icon_test"
+        android:drawablePadding="8dp"
+        android:fontFamily="sans-serif"
+        android:gravity="left|center_vertical"
+        android:stateListAnimator="@null"
+        android:text="@string/alarm"
+        android:textColor="#fff"
+        android:textSize="12dp"
+        android:layout_below="@+id/b3"/>
+
+
+
+</RelativeLayout>
